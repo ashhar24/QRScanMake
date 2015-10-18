@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">QRScanMake</string>
+    <string name="result_succeeded">Success</string>
+    <string name="result_failed">Failed</string>
+</resources>
