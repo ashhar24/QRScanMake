@@ -16,7 +16,7 @@ import com.noc.qrscanmake.R;
 
 import java.util.Hashtable;
 
-/**
+/*
  * Created by defoliate on 18-10-2015.
  */
 public class GenerateQR extends Activity
@@ -51,6 +51,8 @@ public class GenerateQR extends Activity
         int size = 512;
 
         BitMatrix bitMatrix = qrCodeWriter.encode(myCodeText, BarcodeFormat.QR_CODE, size, size, hintMap);
+        //RGB_565  	Each pixel is stored on 2 bytes and only the RGB channels are encoded: red is stored with 5 bits of precision (32 possible values),
+        // green is stored with 6 bits of precision (64 possible values) and blue is stored with 5 bits of precision.
         Bitmap bmp = Bitmap.createBitmap(size, size, Bitmap.Config.RGB_565);
         for(int x = 0; x < size; x++)
         {
